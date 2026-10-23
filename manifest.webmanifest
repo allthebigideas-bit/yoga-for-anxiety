@@ -1,0 +1,21 @@
+{
+ "name": "Jñāna Yoga for Anxiety",
+ "short_name": "Yoga for Anxiety",
+ "start_url": "./",
+ "scope": "./",
+ "display": "browser",
+ "background_color": "#0F1440",
+ "theme_color": "#17123E",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}
