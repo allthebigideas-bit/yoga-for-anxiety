@@ -4020,10 +4020,10 @@ html.rep-edit [data-art] { outline: 3px dashed var(--marigold); outline-offset: 
 
   function show(key) {
     var svg = arts[key]; if (!svg) return;
-    var img = svg.nextElementSibling && svg.nextElementSibling.classList.contains('art-img') ? svg.nextElementSibling : null;
+    var img = svg.nextElementSibling && svg.nextElementSibling.classList.contains('rep-img') ? svg.nextElementSibling : null;   // only an image this script made: a stack's second layer (the lit room) is not a replacement
     var r = reps[key];
     if (r && r.assetId) {
-      if (!img) { img = document.createElement('img'); img.className = 'art-img'; img.decoding = 'async'; svg.parentNode.insertBefore(img, svg.nextSibling); }
+      if (!img) { img = document.createElement('img'); img.className = 'art-img rep-img'; img.decoding = 'async'; svg.parentNode.insertBefore(img, svg.nextSibling); }
       img.src = '/_blob/' + r.assetId; img.alt = svg.getAttribute('aria-label') || svg.getAttribute('alt') || '';
       svg.style.display = 'none';
     } else {
